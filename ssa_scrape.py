@@ -13,7 +13,7 @@ def get_names(num, start_yr, end_yr):
     if num < 1 or num > 1000:
         raise Exception("Number entered is invalid")
 
-    with open('babynames2.csv', 'w') as bncsv:
+    with open('babynames.csv', 'w') as bncsv:
         csvwriter = csv.writer(bncsv)
         #csvwriter.writerow(['year', 'rank', 'males', 'percent_males', 'females', 'percent_females'])
         csvwriter.writerow(['year', 'gender', 'rank', 'name', 'percent'])
@@ -23,7 +23,7 @@ def get_names(num, start_yr, end_yr):
             response = requests.post(url, data=post_params)
             soup = BeautifulSoup(response.content, 'html.parser')
             table = soup.find("table", {"width":"72%"})
-            
+
             for row in table.findAll("tr", {"align":"right"}):
                 cells = row.findAll("td")
 
