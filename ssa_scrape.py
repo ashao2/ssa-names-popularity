@@ -22,8 +22,8 @@ def get_names(num, start_yr, end_yr):
             post_params = {'year': yr, 'top': num, 'number': 'p'}
             response = requests.post(url, data=post_params)
             soup = BeautifulSoup(response.content, 'html.parser')
-            table = soup.find("table", {"width":"72%"})
 
+            table = soup.find("table", {"width":"72%"})
             for row in table.findAll("tr", {"align":"right"}):
                 cells = row.findAll("td")
 

@@ -1,5 +1,7 @@
 # ssa-names-popularity
-ssa_scrape.py is a Python script for scraping baby name data from the Social Security Administration, accessible via https://www.ssa.gov/OACT/babynames/index.html or https://www.ssa.gov/cgi-bin/popularnames.cgi.
+ssa_scrape.py is a Python script for scraping baby name data from the Social Security Administration, accessible [here](https://www.ssa.gov/OACT/babynames/index.html) or [here](https://www.ssa.gov/cgi-bin/popularnames.cgi).
+
+This code is based on the script by [swupnil](https://github.com/swupnil/2014-ssa-scraper/blob/master/ssa_scraper.py). I also consulted materials from [That1Guy](https://stackoverflow.com/questions/17220997/a-presumably-basic-web-scraping-of-http-www-ssa-gov-cgi-bin-popularnames-cgi/17221642), and [Johnathan Soma](http://jonathansoma.com/lede/foundations/classes/friday%20sessions/advanced-scraping-form-submissions-completed/) along the way.
 
 Users can specify _n_, the number of top names they want (1-1000). This means _n_ names will be retrieved for both males and females each.
 
