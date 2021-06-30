@@ -14,16 +14,19 @@ def convert_years_to_names(path):
         name = str(df['name'][i])
         rank = int(df['rank'][i])
         yr = int(df['year'][i])
+        gender = str(df['gender'][i])
         if name not in names_dict:
-            names_dict[name] = np.empty((end_yr - start_yr + 2), dtype=object)
+            names_dict[name] = np.empty((end_yr - start_yr + 3), dtype=object)
             names_dict[name][0] = name
-            names_dict[name][yr - start_yr + 1] = rank
+            names_dict[name][1] = gender
+            names_dict[name][yr - start_yr + 2] = rank
         else:
-            names_dict[name][yr - start_yr + 1] = rank
+            names_dict[name][yr - start_yr + 2] = rank
 
     with open('post_conversion.csv', 'w') as bncsv:
         csvwriter = csv.writer(bncsv)
         col_names = list(range(start_yr, end_yr + 1))
+        col_names.insert(0, 'gender')
         col_names.insert(0, 'name')
         csvwriter.writerow(col_names)
 

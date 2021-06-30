@@ -37,24 +37,26 @@ def get_names(num, start_yr, end_yr):
             female = cells[3].find(text = True)
 
             if male not in names_dict:
-                names_dict[male] = np.empty((end_yr - start_yr + 2), dtype=object)
+                names_dict[male] = np.empty((end_yr - start_yr + 3), dtype=object)
                 names_dict[male][0] = male
-                names_dict[male][yr - start_yr + 1] = rank
+                names_dict[male][1] = 'Male'
+                names_dict[male][yr - start_yr + 2] = rank
             else:
-                names_dict[male][yr - start_yr + 1] = rank
+                names_dict[male][yr - start_yr + 2] = rank
 
             if female not in names_dict:
-                names_dict[female] = np.empty((end_yr - start_yr + 2), dtype=object)
+                names_dict[female] = np.empty((end_yr - start_yr + 3), dtype=object)
                 names_dict[female][0] = female
-                names_dict[female][yr - start_yr + 1] = rank
+                names_dict[female][1] = 'Female'
+                names_dict[female][yr - start_yr + 2] = rank
             else:
-                names_dict[female][yr - start_yr + 1] = rank
-        print(yr)
+                names_dict[female][yr - start_yr + 2] = rank
 
 
-    with open('scapetodict.csv', 'w') as bncsv:
+    with open('checkgender.csv', 'w') as bncsv:
         csvwriter = csv.writer(bncsv)
         col_names = list(range(start_yr, end_yr + 1))
+        col_names.insert(0, 'gender')
         col_names.insert(0, 'name')
         csvwriter.writerow(col_names)
 

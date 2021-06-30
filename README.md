@@ -119,31 +119,31 @@ Using the top 5 names (for each gender) from 2000-2010, here is an example of th
 
 Here is the result of the data above after using convert_year_name.py, which can also be obtained by using scrape_by_name.py:
 
- |name | 2000 | 2001 | 2002 | 2003 | 2004 | 2005 | 2006 | 2007 | 2008 | 2009 | 2010 |
- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
- |Jacob | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
- |Emily | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 3 |  |  |
- |Michael | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 3 | 3 |
- |Hannah | 2 | 3 | 3 | 4 | 5 |  |  |  |  |  |  |
- |Matthew | 3 | 3 | 4 | 4 | 4 | 4 | 5 |  |  |  |  |
- |Madison | 3 | 2 | 2 | 3 | 3 | 3 | 3 | 5 |  |  |  |
- |Joshua | 4 | 4 | 3 | 3 | 3 | 3 | 3 | 4 | 4 |  |  |
- |Ashley | 4 | 4 |  |  |  |  |  |  |  |  |  |
- |Christopher | 5 | 5 |  |  |  |  |  |  |  |  |  |
- |Sarah | 5 |  |  |  |  |  |  |  |  |  |  |
- |Alexis |  | 5 | 5 |  |  |  |  |  |  |  |  |
- |Emma |  |  | 4 | 2 | 2 | 2 | 2 | 3 | 1 | 2 | 3 |
- |Ethan |  |  | 5 |  | 5 | 5 | 4 | 3 | 3 | 2 | 2 |
- |Andrew |  |  |  | 5 |  |  |  |  |  |  |  |
- |Olivia |  |  |  | 5 | 4 | 5 |  |  | 4 | 3 | 4 |
- |Abigail |  |  |  |  |  | 4 |  |  |  |  |  |
- |Isabella |  |  |  |  |  |  | 4 | 2 | 2 | 1 | 1 |
- |Ava |  |  |  |  |  |  | 5 | 4 | 5 | 5 | 5 |
- |Daniel |  |  |  |  |  |  |  | 5 | 5 |  |  |
- |Alexander |  |  |  |  |  |  |  |  |  | 4 |  |
- |Sophia |  |  |  |  |  |  |  |  |  | 4 | 2 |
- |William |  |  |  |  |  |  |  |  |  | 5 | 5 |
- |Jayden |  |  |  |  |  |  |  |  |  |  | 4 |
+|name | gender | 2000 | 2001 | 2002 | 2003 | 2004 | 2005 | 2006 | 2007 | 2008 | 2009 | 2010 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Jacob | Male | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
+| Emily | Female | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 3 |  |  |
+| Michael | Male | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 3 | 3 |
+| Hannah | Female | 2 | 3 | 3 | 4 | 5 |  |  |  |  |  |  |
+| Matthew | Male | 3 | 3 | 4 | 4 | 4 | 4 | 5 |  |  |  |  |
+| Madison | Female | 3 | 2 | 2 | 3 | 3 | 3 | 3 | 5 |  |  |  |
+| Joshua | Male | 4 | 4 | 3 | 3 | 3 | 3 | 3 | 4 | 4 |  |  |
+| Ashley | Female | 4 | 4 |  |  |  |  |  |  |  |  |  |
+| Christopher | Male | 5 | 5 |  |  |  |  |  |  |  |  |  |
+| Sarah | Female | 5 |  |  |  |  |  |  |  |  |  |  |
+| Alexis | Female |  | 5 | 5 |  |  |  |  |  |  |  |  |
+| Emma | Female |  |  | 4 | 2 | 2 | 2 | 2 | 3 | 1 | 2 | 3 |
+| Ethan | Male |  |  | 5 |  | 5 | 5 | 4 | 3 | 3 | 2 | 2 |
+| Andrew | Male |  |  |  | 5 |  |  |  |  |  |  |  |
+| Olivia | Female |  |  |  | 5 | 4 | 5 |  |  | 4 | 3 | 4 |
+| Abigail | Female |  |  |  |  |  | 4 |  |  |  |  |  |
+| Isabella | Female |  |  |  |  |  |  | 4 | 2 | 2 | 1 | 1 |
+| Ava | Female |  |  |  |  |  |  | 5 | 4 | 5 | 5 | 5 |
+| Daniel | Male |  |  |  |  |  |  |  | 5 | 5 |  |  |
+| Alexander | Male |  |  |  |  |  |  |  |  |  | 4 |  |
+| Sophia | Female |  |  |  |  |  |  |  |  |  | 4 | 2 |
+| William | Male |  |  |  |  |  |  |  |  |  | 5 | 5 |
+| Jayden | Male |  |  |  |  |  |  |  |  |  |  | 4 |
 
 This code is based on the script by [swupnil](https://github.com/swupnil/2014-ssa-scraper/blob/master/ssa_scraper.py). I also consulted materials from [That1Guy](https://stackoverflow.com/questions/17220997/a-presumably-basic-web-scraping-of-http-www-ssa-gov-cgi-bin-popularnames-cgi/17221642) and [Johnathan Soma](http://jonathansoma.com/lede/foundations/classes/friday%20sessions/advanced-scraping-form-submissions-completed/) along the way.
 
@@ -159,4 +159,4 @@ convert_year_name.py requires the flag _-f_ for the file path of the a CSV file 
 
 Two CSV files called _byname1880-2020.csv_ and _byyear1880-2020_ are provided with the top 100 male & female names per year from 1880 to 2020.
 
-BeautifulSoup and Numpy are needed to run these scripts.
+BeautifulSoup, Pandas, and Numpy are needed to run these scripts.
