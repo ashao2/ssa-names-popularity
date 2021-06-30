@@ -3,7 +3,6 @@ from bs4 import BeautifulSoup
 import csv
 import argparse
 import numpy as np
-import pandas as pd
 
 url = 'https://www.ssa.gov/cgi-bin/popularnames.cgi'
 
