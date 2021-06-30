@@ -4,6 +4,10 @@ scrape_by_year.py and scrape_by_name.py are Python scripts for scraping baby nam
 
 Using the top 5 names (for each gender) from 2000-2010, here is an example of the data provided by the output of scrape_by_year.py:
 
+```
+python3 scrape_by_year.py -n 5 -s 2000 -e 2010
+```
+
 | year | gender | rank | name | percent |
 | ---  | ---    | ---  | ---  | ---     |
 | 2000 | Male | 1 | Jacob | 1.6516 |
@@ -119,6 +123,10 @@ Using the top 5 names (for each gender) from 2000-2010, here is an example of th
 
 Here is the result of the data above after using convert_year_name.py, which can also be obtained by using scrape_by_name.py:
 
+```
+python3 scrape_by_name.py -n 5 -s 2000 -e 2010
+```
+
 |name | gender | 2000 | 2001 | 2002 | 2003 | 2004 | 2005 | 2006 | 2007 | 2008 | 2009 | 2010 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Jacob | Male | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
@@ -153,10 +161,10 @@ Users can also specify the year range of interest with _-s_ for the starting yea
 
 For scrape_by_year.py, the results will be written to a CSV file with the columns _year, gender, rank, name, percent_. Please note that _percent_ refers to the percent of births in a year with the name in question for one gender. Thus, if in 2020 the percent given for the name Emily is 0.5%, this means 0.5% of girls (not babies overall) were named Emily.
 
-For scrape_by_name.py, the results will be written to a CSV file with the columns _name, year1,...,yearn_.
+For scrape_by_name.py, the results will be written to a CSV file with the columns _name, year1, ... ,yearn_.
 
-convert_year_name.py requires the flag _-f_ for the file path of the a CSV file in the by-years format.
+convert_year_name.py requires the flag _-f_ for the file path of a CSV file that is the output of scrape_by_year.py.
 
-Two CSV files called _byname1880-2020.csv_ and _byyear1880-2020_ are provided with the top 100 male & female names per year from 1880 to 2020.
+Two CSV files called byname1880-2020.csv and byyear1880-2020.csv are provided with the top 100 male & female names per year from 1880 to 2020.
 
 BeautifulSoup, Pandas, and Numpy are needed to run these scripts.
