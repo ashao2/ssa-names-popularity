@@ -2,9 +2,7 @@
 
 scrape_by_year.py and scrape_by_name.py are Python scripts for scraping baby name data from the Social Security Administration, accessible [here](https://www.ssa.gov/OACT/babynames/index.html) or [here](https://www.ssa.gov/cgi-bin/popularnames.cgi).
 
-For scrape_by_year.py and scrape_by_name.py, users can use the flag _-n_ to specify the number of top names they want (1-1000). This means that number of names will be retrieved for both males and females each.
-
-Users can also specify the year range of interest with _-s_ for the starting year and _-e_ for the ending year. Currently, the maximum range possible is 1880-2020.
+For scrape_by_year.py and scrape_by_name.py, users can use the flag _-n_ to specify the number of top names they want (1-1000). This means that number of names will be retrieved for both males and females each. The default value is 100. Users can also specify the year range of interest with _-s_ for the starting year and _-e_ for the ending year. Currently, the maximum range possible is 1880-2020, and these are the default values.
 
 For scrape_by_year.py, the results will be written to a CSV file with the columns _year, gender, rank, name, percent_. Please note that _percent_ refers to the percent of births in a year with the name in question for one gender. Thus, if in 2020 the percent given for the name Emily is 0.5%, this means 0.5% of girls (not babies overall) were named Emily.
 
