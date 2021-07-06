@@ -13,7 +13,7 @@ def get_names(num, start_yr, end_yr):
     if num < 1 or num > 1000:
         raise Exception("Number entered is invalid")
 
-    with open('babynames.csv', 'w') as bncsv:
+    with open('babynames_byyear.csv', 'w') as bncsv:
         csvwriter = csv.writer(bncsv)
         csvwriter.writerow(['year', 'gender', 'rank', 'name', 'percent'])
 
@@ -34,7 +34,7 @@ def get_names(num, start_yr, end_yr):
                 percent_m = cells[2].find(text = True)
                 female = cells[3].find(text = True)
                 percent_f = cells[4].find(text = True)
-                
+
                 csvwriter.writerow([yr, 'Male', rank, male, percent_m[:-1]])
                 csvwriter.writerow([yr, 'Female', rank, female, percent_f[:-1]])
 

@@ -52,7 +52,7 @@ def get_names(num, start_yr, end_yr):
                 names_dict[female][yr - start_yr + 2] = rank
 
 
-    with open('checkgender.csv', 'w') as bncsv:
+    with open('babyynames_byname.csv', 'w') as bncsv:
         csvwriter = csv.writer(bncsv)
         col_names = list(range(start_yr, end_yr + 1))
         col_names.insert(0, 'gender')

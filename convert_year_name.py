@@ -19,7 +19,7 @@ def convert_years_to_names(path):
         rank = int(df['rank'][i])
         yr = int(df['year'][i])
         gender = str(df['gender'][i])
-        
+
         if name not in names_dict:
             names_dict[name] = np.empty((end_yr - start_yr + 3), dtype=object)
             names_dict[name][0] = name
